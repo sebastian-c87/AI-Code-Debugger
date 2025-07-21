@@ -1,6 +1,7 @@
 ﻿"""
 Moduł analizatora kodu Python z wykorzystaniem AI
 Integruje narzędzia statycznej analizy z modelami AI
+Autor: Sebastian Ciborowski
 """
 
 import ast
