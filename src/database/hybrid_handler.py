@@ -1,5 +1,6 @@
 ﻿"""
 Hybrydowy handler bazy danych - MongoDB + lokalne pliki
+Autor: Sebastian Ciborowski
 """
 
 from typing import List, Dict, Any, Optional, Union
