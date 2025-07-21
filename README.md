@@ -62,7 +62,7 @@ AI Code Debugger is an advanced desktop application that uses artificial intelli
 ### Ready Executable File
 **Windows Users:** Download the standalone executable file (no Python installation required)
 
-📥 **[AICodeDebugger.exe](dist/AICodeDebugger.exe)**
+📥 **[AICodeDebugger.exe](https://github.com/sebastian-c87/AI-Code-Debugger/releases/download/v1.0.0/AICodeDebugger.exe)**
 
 > ⚠️ **Security Notice:** Windows may display a warning for unsigned executable files. Click "More info" → "Run anyway".
 
@@ -252,7 +252,7 @@ AI Code Debugger to zaawansowana aplikacja desktopowa wykorzystująca sztuczną 
 ### Gotowy Plik Wykonywalny
 **Użytkownicy Windows:** Pobierz samodzielny plik wykonywalny (nie wymaga instalacji Pythona)
 
-📥 **[AICodeDebugger.exe](dist/AICodeDebugger.exe)**
+📥 **[AICodeDebugger.exe](https://github.com/sebastian-c87/AI-Code-Debugger/releases/download/v1.0.0/AICodeDebugger.exe)**
 
 > ⚠️ **Uwaga Bezpieczeństwa:** Windows może wyświetlić ostrzeżenie dla niepodpisanych plików wykonywalnych. Kliknij "Więcej informacji" → "Uruchom mimo to".
 
