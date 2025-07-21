@@ -1,0 +1,42 @@
+﻿# 🔐 BEZPIECZEŃSTWO - KRYTYCZNE WYKLUCZENIA
+secrets_builder.py                    # Oryginalne klucze API  
+src/security/                         # CAŁY FOLDER security
+encrypted_secrets.py                  # Salt i zaszyfrowane klucze
+key_manager.py                        # Salt, hasła, wszystkie klucze
+*.env                                # Pliki środowiskowe
+.env*                               # Wszystkie warianty .env
+config/secrets/                      # Dodatkowe foldery z kluczami
+
+# 🏗️ BUILD ARTIFACTS
+dist/                               # Folder z exe - tylko Release
+build/                              # PyInstaller temp files
+*.spec                              # Może zawierać ścieżki
+
+# 🔧 DEVELOPMENT TOOLS  
+hooks/                              # Tylko dla exe, nie dla repo
+*.log                               # Log files
+temp/                               # Tymczasowe pliki
+
+# 🐍 PYTHON STANDARD
+__pycache__/                        
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# 🌐 VIRTUAL ENVIRONMENT
+venv/
+env/
+ENV/
+.venv/
+
+# 🔧 IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# 📦 OS FILES
+.DS_Store
+Thumbs.db
+desktop.ini

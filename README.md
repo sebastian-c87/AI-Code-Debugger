@@ -1,0 +1,371 @@
+﻿<div align="center">
+
+# 🤖 AI Code Debugger
+
+**Zaawansowana Aplikacja do Analizy Kodu Python z Wykorzystaniem AI**
+
+[![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=flat&logo=python&logoColor=white)](https://python.org)
+[![CustomTkinter](https://img.shields.io/badge/GUI-CustomTkinter-blue?style=flat)](https://github.com/TomSchimansky/CustomTkinter)
+[![OpenAI](https://img.shields.io/badge/AI-OpenAI_GPT--4.1-orange?style=flat&logo=openai&logoColor=white)](https://openai.com)
+[![MongoDB](https://img.shields.io/badge/Database-MongoDB-green?style=flat&logo=mongodb&logoColor=white)](https://mongodb.com)
+[![License](https://img.shields.io/badge/License-MIT-yellow?style=flat)](LICENSE)
+
+</div>
+
+## 📖 O Projekcie
+
+AI Code Debugger to zaawansowana aplikacja desktopowa wykorzystująca sztuczną inteligencję do analizy i debugowania kodu Python. Projekt łączy tradycyjne narzędzia analizy statycznej z mocą modeli AI, oferując inteligentne sugestie naprawcze w intuicyjnym interfejsie graficznym.
+
+## 🎓 Kluczowe Możliwości
+
+- ⚡ Analiza kodu w czasie rzeczywistym z wykorzystaniem Pylint i Flake8
+- 🧠 Inteligentne sugestie AI generowane przez OpenAI GPT-4.1
+- 📝 Edytor kodu do ręcznego wpisania/zmieniania z numeracją linii
+- 💾 Historia analiz przechowywana w hybrydowym systemie bazy danych
+- 🔒 Bezpieczne zarządzanie kluczami API z szyfrowaniem AES
+
+## ✨ Kluczowe Funkcje
+
+### 🔧 Analiza i Debugowanie
+- ✅ Analiza statyczna kodu używając Pylint i Flake8
+- ✅ Sugestie naprawcze AI dla wykrytych błędów
+- ✅ Klasyfikacja błędów według poziomu krytyczności
+- ✅ Szczegółowe raporty z wyjaśnieniami i przykładami kodu
+- ✅ Historia analiz z możliwością wyszukiwania
+
+### 🖥️ Interfejs Użytkownika
+- 🎨 Nowoczesny interfejs oparty na CustomTkinter
+- 📝 Edytor kodu z podświetlaniem składni Python
+- 📊 Panel sugestii z interaktywnymi wynikami
+- 🔢 Numeracja linii z synchronizacją przewijania
+- 🌓 Tryb ciemny dla komfortu oczu
+
+### 🔒 Bezpieczeństwo i Konfiguracja
+- 🛡️ Zaszyfrowane klucze API wbudowane w aplikację
+- 💾 Hybrydowe przechowywanie (MongoDB + lokalne pliki)
+- ⚙️ Automatyczna konfiguracja bez konieczności setup
+- 🔄 Graceful degradation przy awarii zewnętrznych serwisów
+
+## 🛠️ Stos Technologiczny
+
+| Technologia | Przeznaczenie | Wersja |
+|-------------|---------------|--------|
+| ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) | Główny język programowania | 3.12+ |
+| ![CustomTkinter](https://img.shields.io/badge/CustomTkinter-blue?style=flat) | Nowoczesny interfejs graficzny | 5.2+ |
+| ![OpenAI](https://img.shields.io/badge/OpenAI-orange?style=flat&logo=openai&logoColor=white) | Generowanie sugestii | GPT-4.1 |
+| ![MongoDB](https://img.shields.io/badge/MongoDB-green?style=flat&logo=mongodb&logoColor=white) | Baza danych z hybrydowym fallback | 4.0+ |
+| ![Pylint](https://img.shields.io/badge/Pylint-yellow?style=flat) | Analiza jakości kodu | 2.15+ |
+| ![Flake8](https://img.shields.io/badge/Flake8-lightblue?style=flat) | Sprawdzanie błędów PEP8 | 6.0+ |
+
+## 🚀 Download
+
+### Gotowy Plik Wykonywalny
+**Użytkownicy Windows:** Pobierz samodzielny plik wykonywalny (nie wymaga instalacji Pythona)
+
+📥 **[AICodeDebugger.exe](dist/AICodeDebugger.exe)**
+
+> ⚠️ **Uwaga Bezpieczeństwa:** Windows może wyświetlić ostrzeżenie dla niepodpisanych plików wykonywalnych. Kliknij "Więcej informacji" → "Uruchom mimo to".
+
+### Wymagania Systemowe
+- 🖥️ **System:** Windows 10/11 (64-bit)
+- 💾 **RAM:** Minimum 1 GB
+- 💿 **Miejsce:** 200 MB wolnego miejsca
+- 🖼️ **Wyświetlacz:** Rozdzielczość minimum 1024x768
+- 🌐 **Internet:** Wymagany do funkcji AI (sugestie)
+
+### 🔧 Instalacja
+Po prostu pobierz i uruchom `AICodeDebugger.exe` - wszystkie wymagane komponenty są wbudowane!
+
+*Kod źródłowy jest również dostępny w tym repozytorium dla programistów.*
+
+## 💻 Użytkowanie
+
+### Przewodnik Szybkiego Startu
+
+1. **Uruchom Aplikację**
+   - Kliknij dwukrotnie `AICodeDebugger.exe`
+   - Aplikacja uruchomi się z domyślnymi ustawieniami
+
+2. **Wczytaj Kod do Analizy**
+   - Kliknij "Otwórz plik" lub wklej kod bezpośrednio do edytora
+   - Obsługiwane formaty: `.py`, `.pyx`, `.pyi`
+
+3. **Uruchom Analizę**
+   - Kliknij "Analizuj"
+   - Poczekaj na wyniki analizy (zwykle 5-10 sekund)
+
+4. **Przejrzyj Sugestie**
+   - Sprawdź wykryte błędy w panelu po prawej stronie
+   - Przeczytaj sugestie naprawcze wygenerowane przez AI
+   - Zastosuj rekomendowane poprawki
+
+
+### 📊 Panel Wyników
+
+Aplikacja wyświetla:
+- **Lista błędów** - wykryte problemy posortowane według krytyczności
+- **Sugestie AI** - inteligentne rekomendacje naprawcze
+- **Metryki** - opis kodu w liczbach
+- **Historia** - lista wszystkich wcześniejszych analiz
+
+## 🧠 Technologia AI
+
+### Integracja z OpenAI GPT-4.1
+
+**Funkcjonalność:** Generowanie inteligentnych sugestii naprawczych dla wykrytych błędów kodu.
+
+**Proces działania:**
+1. **Analiza statyczna** - Pylint i Flake8 wykrywają błędy
+2. **Klasyfikacja** - błędy są kategoryzowane według typu i krytyczności
+3. **Zapytanie AI** - kontekst błędu jest wysyłany do GPT-4.1
+4. **Generowanie sugestii** - AI tworzy szczegółowe rekomendacje naprawcze
+
+**Rodzaje sugestii AI:**
+- 🔧 **Naprawy błędów składniowych** - automatyczne korekty
+- 📈 **Optymalizacje wydajności** - propozycje usprawnień
+- 📚 **Najlepsze praktyki** - rekomendacje standardów kodowania
+- 🛡️ **Bezpieczeństwo kodu** - wykrywanie potencjalnych luk
+
+## 🔒 Architektura Bezpieczeństwa
+
+### Zarządzanie Kluczami API
+- **Szyfrowanie AES:** Klucze API są zaszyfrowane algorytmem AES z 256-bitowym kluczem
+- **Wbudowane sekrety:** Brak konieczności konfiguracji przez użytkownika
+- **Runtime decryption:** Klucze są odszyfrowywane tylko w pamięci podczas działania
+- **Brak plain text:** Żadne klucze nie są przechowywane w formie tekstowej
+
+### System Hybrydowy Bazy Danych
+- **MongoDB główna:** Preferowane przechowywanie dla pełnej funkcjonalności
+- **Lokalne pliki:** Automatyczny fallback przy braku połączenia
+- **Graceful degradation:** Aplikacja działa nawet offline (bez funkcji AI)
+- **Synchronizacja:** Automatyczne zsynchronizowanie przy przywróceniu połączenia
+
+## 📚 Zastosowania Praktyczne
+
+### 🎓 Edukacja
+- **Nauka programowania** - zrozumienie częstych błędów
+- **Code review** - systematyczne sprawdzanie jakości kodu
+- **Najlepsze praktyki** - uczenie się standardów branżowych
+
+### 💼 Rozwój Profesjonalny
+- **Quality assurance** - automatyczne sprawdzanie jakości kodu
+- **Refactoring** - identyfikacja obszarów do poprawy
+- **Mentoring** - narzędzie dla seniorów do nauczania juniorów
+
+### 🔧 Narzędzia Deweloperskie
+- **Pre-commit hooks** - integracja z workflow Git
+- **CI/CD pipeline** - automatyczne sprawdzanie w procesie build
+- **Code standards** - egzekwowanie standardów w zespole
+
+## 📄 Licencja
+
+Ten projekt jest licencjonowany na licencji MIT - zobacz plik [LICENSE](LICENSE) po szczegóły.
+
+**Podsumowanie Licencji MIT:** Wolne do użytku, modyfikacji i dystrybucji. Zachowaj tylko oryginalną notę o prawach autorskich.
+
+## 👨‍💻 Autor
+
+**Sebastian Ciborowski**
+- 🎓 Student Informatyki & Entuzjasta IT
+- 💼 Specjalizacja w Cyberbezpieczeństwie, Pythonie & AI
+- 🔗 GitHub: [@sebastian-c87](https://github.com/sebastian-c87)
+- 💼 LinkedIn: [Sebastian Ciborowski](https://www.linkedin.com/in/sebastian-ciborowski-8442a6302/)
+
+---
+
+<div align="center">
+
+⭐ **Jeśli ten projekt pomógł Ci w analizie kodu, rozważ oznaczenie go gwiazdką!**
+
+*Stworzone z ❤️ dla społeczności programistów Python*
+
+</div>
+
+<br>
+
+---
+---
+
+<br>
+<div align="center">
+
+# 🤖 AI Code Debugger
+
+**Advanced Python Code Analysis Application with AI Integration**
+
+[![Python](https://img.shields.io/badge/Python-3.12+-3776AB?style=flat&logo=python&logoColor=white)](https://python.org)
+[![CustomTkinter](https://img.shields.io/badge/GUI-CustomTkinter-blue?style=flat)](https://github.com/TomSchimansky/CustomTkinter)
+[![OpenAI](https://img.shields.io/badge/AI-OpenAI_GPT--4.1-orange?style=flat&logo=openai&logoColor=white)](https://openai.com)
+[![MongoDB](https://img.shields.io/badge/Database-MongoDB-green?style=flat&logo=mongodb&logoColor=white)](https://mongodb.com)
+[![License](https://img.shields.io/badge/License-MIT-yellow?style=flat)](LICENSE)
+
+</div>
+
+## 📖 About the Project
+
+AI Code Debugger is an advanced desktop application that uses artificial intelligence to analyze and debug Python code. The project combines traditional static analysis tools with the power of AI models, offering intelligent fix suggestions in an intuitive graphical interface.
+
+## 🎓 Key Capabilities
+
+- ⚡ Real-time code analysis using Pylint and Flake8
+- 🧠 Intelligent AI suggestions generated by OpenAI GPT-4.1
+- 📝 Code editor for manual typing/changing with line numbering
+- 💾 Analysis history stored in hybrid database system
+- 🔒 Secure API key management with AES encryption
+
+## ✨ Key Features
+
+### 🔧 Analysis and Debugging
+- ✅ Static code analysis using Pylint and Flake8
+- ✅ AI-powered fix suggestions for detected errors
+- ✅ Error classification by criticality level
+- ✅ Detailed reports with explanations and code examples
+- ✅ Analysis history with search capabilities
+
+### 🖥️ User Interface
+- 🎨 Modern interface based on CustomTkinter
+- 📝 Code editor with Python syntax highlighting
+- 📊 Suggestions panel with interactive results
+- 🔢 Line numbering with scroll synchronization
+- 🌓 Dark mode for eye comfort
+
+### 🔒 Security and Configuration
+- 🛡️ Encrypted API keys embedded in application
+- 💾 Hybrid storage (MongoDB + local files)
+- ⚙️ Automatic configuration without setup requirements
+- 🔄 Graceful degradation when external services fail
+
+## 🛠️ Technology Stack
+
+| Technology | Purpose | Version |
+|-------------|---------|---------|
+| ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) | Main programming language | 3.12+ |
+| ![CustomTkinter](https://img.shields.io/badge/CustomTkinter-blue?style=flat) | Modern graphical interface | 5.2+ |
+| ![OpenAI](https://img.shields.io/badge/OpenAI-orange?style=flat&logo=openai&logoColor=white) | Suggestion generation | GPT-4.1 |
+| ![MongoDB](https://img.shields.io/badge/MongoDB-green?style=flat&logo=mongodb&logoColor=white) | Database with hybrid fallback | 4.0+ |
+| ![Pylint](https://img.shields.io/badge/Pylint-yellow?style=flat) | Code quality analysis | 2.15+ |
+| ![Flake8](https://img.shields.io/badge/Flake8-lightblue?style=flat) | PEP8 error checking | 6.0+ |
+
+## 🚀 Download
+
+### Ready Executable File
+**Windows Users:** Download the standalone executable file (no Python installation required)
+
+📥 **[AICodeDebugger.exe](dist/AICodeDebugger.exe)**
+
+> ⚠️ **Security Notice:** Windows may display a warning for unsigned executable files. Click "More info" → "Run anyway".
+
+### System Requirements
+- 🖥️ **System:** Windows 10/11 (64-bit)
+- 💾 **RAM:** Minimum 1 GB
+- 💿 **Storage:** 200 MB free space
+- 🖼️ **Display:** Minimum resolution 1024x768
+- 🌐 **Internet:** Required for AI features (suggestions)
+
+### 🔧 Installation
+Simply download and run `AICodeDebugger.exe` - all required components are built-in!
+
+*Source code is also available in this repository for developers.*
+
+## 💻 Usage
+
+### Quick Start Guide
+
+1. **Launch Application**
+   - Double-click `AICodeDebugger.exe`
+   - Application starts with default settings
+
+2. **Load Code for Analysis**
+   - Click "Open file" or paste code directly into editor
+   - Supported formats: `.py`, `.pyx`, `.pyi`
+
+3. **Run Analysis**
+   - Click "Analyze"
+   - Wait for analysis results (usually 5-10 seconds)
+
+4. **Review Suggestions**
+   - Check detected errors in right panel
+   - Read AI-generated fix suggestions
+   - Apply recommended corrections
+
+
+### 📊 Results Panel
+
+The application displays:
+- **Error list** - detected problems sorted by criticality
+- **AI suggestions** - intelligent fix recommendations
+- **Metrics** - description of the code in numbers
+- **History** - list of all previous analyses
+
+## 🧠 AI Technology
+
+### OpenAI GPT-4.1 Integration
+
+**Functionality:** Generate intelligent fix suggestions for detected code errors.
+
+**Operation process:**
+1. **Static analysis** - Pylint and Flake8 detect errors
+2. **Classification** - errors are categorized by type and criticality
+3. **AI query** - error context is sent to GPT-4.1
+4. **Suggestion generation** - AI creates detailed fix recommendations
+
+**Types of AI suggestions:**
+- 🔧 **Syntax error fixes** - automatic corrections
+- 📈 **Performance optimizations** - improvement proposals
+- 📚 **Best practices** - coding standards recommendations
+- 🛡️ **Code security** - potential vulnerability detection
+
+## 🔒 Security Architecture
+
+### API Key Management
+- **AES encryption:** API keys are encrypted with 256-bit AES algorithm
+- **Embedded secrets:** No user configuration required
+- **Runtime decryption:** Keys are decrypted only in memory during operation
+- **No plain text:** No keys are stored in text format
+
+### Hybrid Database System
+- **MongoDB primary:** Preferred storage for full functionality
+- **Local files:** Automatic fallback when connection unavailable
+- **Graceful degradation:** Application works even offline (without AI features)
+- **Synchronization:** Automatic sync when connection restored
+
+## 📚 Practical Applications
+
+### 🎓 Education
+- **Programming learning** - understanding common errors
+- **Code review** - systematic code quality checking
+- **Best practices** - learning industry standards
+
+### 💼 Professional Development
+- **Quality assurance** - automatic code quality checking
+- **Refactoring** - identifying areas for improvement
+- **Mentoring** - tool for seniors to teach juniors
+
+### 🔧 Development Tools
+- **Pre-commit hooks** - Git workflow integration
+- **CI/CD pipeline** - automatic checking in build process
+- **Code standards** - enforcing team standards
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+**MIT License Summary:** Free to use, modify and distribute. Just keep the original copyright notice.
+
+## 👨‍💻 Author
+
+**Sebastian Ciborowski**
+- 🎓 Computer Science Student & IT Enthusiast
+- 💼 Specialization in Cybersecurity, Python & AI
+- 🔗 GitHub: [@sebastian-c87](https://github.com/sebastian-c87)
+- 💼 LinkedIn: [Sebastian Ciborowski](https://www.linkedin.com/in/sebastian-ciborowski-8442a6302/)
+
+---
+
+<div align="center">
+
+⭐ **If this project helped you with code analysis, consider giving it a star!**
+
+*Created with ❤️ for the Python developer community*
+
+</div>
